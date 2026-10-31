@@ -1,21 +1,20 @@
-This is a Kotlin Multiplatform project targeting Android.
+# KotlinPet Manager 🐾
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-      Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-      folder is the appropriate location.
+**Estudiante:** Alejandro Arbeláez Molina
+**Código:** 1092852144
 
-### Running the apps
+## Descripción
+KotlinPet Manager 🐾 es una app Android para clínicas veterinarias que permite registrar pacientes con nombre, especie, edad, contacto de emergencia y prioridad, y verlos al instante en una lista de tarjetas. Desarrollada con Jetpack Compose, Material 3 y arquitectura MVVM, separa la lógica en un ViewModel que valida los datos y actualiza la interfaz.
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and
-options:
+## Arquitectura (MVVM)
+- `model/` → `Paciente` (data class)
+- `viewmodel/` → `PacienteViewModel` (estado, validación, registro y limpieza del formulario)
+- `ui/` → pantalla y componentes en Jetpack Compose (View)
 
-- Android app: `./gradlew :androidApp:assembleDebug`
+## Tecnologías
+- Kotlin + Jetpack Compose
+- Material 3
+- Git y GitHub
 
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Captura de la app en ejecución
+![KotlinPet Manager en ejecución](captura.png)
